@@ -29,10 +29,21 @@ Installing the npm package locally is requires by running `npm install` is the t
 
 After installing npm packages, the application will be invoked by using the following command: `npm start` You must also have a mongodb server running locally and have the correct path configured in /config/connection.js under the variable "ConnectionString". Once the server is running you can input get, post, put and delete commands to localhost:3001/api/users and localhost:3001/api/thoughts.
 
+
+
+https://github.com/boomshakazulu/NoSQL-Social-Network-API/assets/120769113/13dfd6e9-51df-4e44-b249-b591bc2aa082
+
+
+
 ---
 
 ## Technologies
-
+* ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+* ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+* ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+* ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD)
+  
 ---
 
 ## License
