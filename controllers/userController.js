@@ -38,13 +38,27 @@ module.exports = {
   async updateUser(req, res) {
     try {
       const user = User.findOneAndUpdate(
-        { _id: req.params },
+        { _id: req.params.userid },
         { username: req.body.username },
         { new: true }
       );
       !user
         ? res.status(404).json({ message: "No user with that ID found" })
         : res.json("Updated the username");
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  },
+
+  async deleteUser(req, res) {
+    try {
+      const user = await user.findOneAndRemove({ _id: req.params.userid });
+
+      if (!user) {
+        return res.status(404).json({ message: "No user with this id!" });
+      }
+
+      res.json({ message: "User successfully deleted!" });
     } catch (err) {
       res.status(500).json(err);
     }
